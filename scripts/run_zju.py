@@ -22,12 +22,12 @@ def main(select_idx):
         outname="./saved_final_results/zju_" + name + "_" + nnode + "_final"
 
 
-        runf = "python train_gui.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --iterations_node_rendering 10000 --data_type ZJU --use_isotropic_gs"
+        runf = "python train_gui.py --source_path ./data/zju_processed/" + name + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --iterations_node_rendering 10000 --data_type ZJU --use_isotropic_gs"
         if train_stage1:
             os.system(runf) 
         
         
-        runf = "python render.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --use_isotropic_gs"
+        runf = "python render.py --source_path ./data/zju_processed/" + name + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --use_isotropic_gs"
         
         if render_stage1:
             os.system(runf) 
@@ -35,22 +35,22 @@ def main(select_idx):
         
         knn=-1 
         # "CUDA_VISIBLE_DEVICES=6" + cuda_id    
-        runf = "python run_train_rig.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + "_node --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --iterations 100000 --use_isotropic_gs --use_skinning_weight_mlp --use_template_offsets --data_type ZJU --skeleton_warm_up 5000"
+        runf = "python run_train_rig.py --source_path ./data/zju_processed/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + "_node --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --iterations 100000 --use_isotropic_gs --use_skinning_weight_mlp --use_template_offsets --data_type ZJU --skeleton_warm_up 5000"
 
         if train_stage2:
             os.system(runf) 
         
-        runf = "python render_rig.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) 
+        runf = "python render_rig.py --source_path ./data/zju_processed/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) 
         
         if render_stage2:
             os.system(runf) 
         
-        runf = "python render_rig.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) + " --mode time --view_id " + view_id + " --skip_test"
+        runf = "python render_rig.py --source_path ./data/zju_processed/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) + " --mode time --view_id " + view_id + " --skip_test"
         
         if render_stage2_interpolation:
             os.system(runf) 
         
-        runf = "python render_rig.py --source_path ./data/zju_processed_mv/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) + " --mode motion --view_id " + view_id + " --skip_test"
+        runf = "python render_rig.py --source_path ./data/zju_processed/" + name + " --model_path " + outname + " --pretrain_model_path " + pretrain_model_path + " --deform_type node --node_num 512 --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --W 800 --H 800 --skeleton_weight_knn " + str(knn) + " --mode motion --view_id " + view_id + " --skip_test"
         
         if render_stage2_random_motion:
             os.system(runf) 

@@ -3,7 +3,7 @@ This repository includes the source code of the paper [RigGS: Rigging of 3D Gaus
 
 Authors: [Yuxin Yao](https://yaoyx689.github.io/), Zhi Deng, [Junhui Hou](https://sites.google.com/site/junhuihoushomepage/).
 
-### <a href="https://yaoyx689.github.io/RigGS.html" target="_blank">Project Page</a> | <a href="https://arxiv.org/abs/xxx" target="_blank">Paper</a> | <a href="xxx" target="_blank">Data</a>
+### <a href="https://yaoyx689.github.io/RigGS.html" target="_blank">Project Page</a> | <a href="https://arxiv.org/abs/xxx" target="_blank">Paper</a> 
 
 
 ### Install all dependencies  
@@ -37,7 +37,7 @@ We used the following datasets in our paper:
 - [DG-Mesh](https://github.com/Isabella98Liu/DG-Mesh)
 - [ZJU-MoCap](https://github.com/zju3dv/neuralbody/blob/master/INSTALL.md#zju-mocap-dataset) 
 
-The pre-processed 2D skeleton and semantic labels can be downloaded [here](http://). The pre-trained checkpoint can be found [here](http://). More details about processing data can be found in [here](./process_data/readme.md). 
+The pre-processed 2D skeleton and semantic labels and pre-trained checkpoints (`saved_final_results`) can be downloaded [here](https://drive.google.com/drive/folders/1BoHJ4z8ZcDlKrNJrcDkPfpD0h8w9go5J?usp=sharing). More details about processing data can be found in [here](./process_data/readme.md). 
 
 
 

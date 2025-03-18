@@ -1,6 +1,8 @@
+## Pre-processed data 
+
 ```
 ./RigGS
-├── checkpoints
+├── saved_final_results
 │   ├── jumpingjacks_512_final_node
 │   │   ├── point_cloud
 │   │   ├── skeleton
@@ -40,3 +42,5 @@
         ├── 386
         └── ...
 ```
+
+## Process real-captured data 

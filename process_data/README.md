@@ -5,7 +5,7 @@
 For the data used in the paper, you can download the preprocessed semantic segmentation and 2D skeleton from [here]().
 If you want to use our method on the other data, you can refer to the following.
 
-1. (**Usage in the paper**) Download the [Hi-LASSIE](https://github.com/google/hi-lassie) and install the dependences according to its introduction. Then put the `cal_semantic_seg.py` under the `hi-lassie/main/` folder and run 
+1. (**Used in the paper**) Download the [Hi-LASSIE](https://github.com/google/hi-lassie) and install the dependences according to its introduction. Then put the `cal_semantic_seg.py` under the `hi-lassie/main/` folder and run 
     ```
     python cal_semantic_seg.py --data_dir ${DATA_PATH} --image_folder ${NAME_OF_IMAGE_FOLDER} --mask_folder ${NAME_OF_MASK_FOLDER} 
     ``` 

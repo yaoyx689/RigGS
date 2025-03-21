@@ -2,10 +2,10 @@
 
 ## Compute the semantic segmentation and 2D skeleton 
 
-For the data used in the paper, you can download the preprocessed semantic segmentation and 2D skeleton from [here]().
+For the data used in the paper, you can download the preprocessed semantic segmentation and 2D skeleton from [here](https://drive.google.com/file/d/1P5YOLkqm2a4pEqkEvf0pq3UHb-hrlK_g/view?usp=sharing).
 If you want to use our method on the other data, you can refer to the following.
 
-1. (**Used in the paper**) Download the [Hi-LASSIE](https://github.com/google/hi-lassie) and install the dependences according to its introduction. Then put the `cal_semantic_seg.py` under the `hi-lassie/main/` folder and run 
+1. (**Used in the paper**) Download the [Hi-LASSIE](https://github.com/google/hi-lassie) and install the dependences according to its introduction. Then put the `cal_semantic_seg.py` in the `hi-lassie/main/` folder and run 
     ```
     python cal_semantic_seg.py --data_dir ${DATA_PATH} --image_folder ${NAME_OF_IMAGE_FOLDER} --mask_folder ${NAME_OF_MASK_FOLDER} 
     ``` 
@@ -15,7 +15,7 @@ If you want to use our method on the other data, you can refer to the following.
     ```
     python cal_2d_skeleton.py --data_dir ${DATA_PATH} --image_folder ${NAME_OF_IMAGE_FOLDER} --mask_folder ${NAME_OF_MASK_FOLDER} 
     ``` 
-    Then the 2D skeleton will be obtained in `${DATA_PATH}/train_thinned`. If the input image is RGBA type, then you can ignore the `--mask_folder`. Our code can be run without semantic segmentation. 
+    Then the 2D skeleton will be obtained in `${DATA_PATH}/train_thinned`. If the input image is in RGBA type, then you can ignore the `--mask_folder`. Our code can be run without semantic segmentation. 
 
 
 ## Details of preprocessing ZJU-MoCap dataset 

@@ -17,7 +17,7 @@ def main(data_dir, out_dir):
     pretrain_model_path= os.path.join(out_dir, 'stage1')
     outname=out_dir 
 
-    runf = "python train_gui.py --source_path " + data_dir + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --iterations_node_rendering 10000 --data_type ZJU --use_isotropic_gs"
+    runf = "python train_gui.py --source_path " + data_dir + " --model_path " + pretrain_model_path + " --deform_type node --node_num " + nnode + " --is_blender --eval --gt_alpha_mask_as_scene_mask --local_frame --resolution 2 --iterations_node_rendering 10000 --use_isotropic_gs"
     if train_stage1 and not use_gui:
         os.system(runf) 
     

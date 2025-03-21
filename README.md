@@ -1,9 +1,29 @@
-# RigGS
-This repository includes the source code of the paper [RigGS: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos (CVPR 2025)](https://arxiv.org/abs/xxx).
+<br />
+<p align="center">
+    <h1 align="center">
+        <a href="#">RigGS</a>: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos
+    </h1>
 
-Authors: [Yuxin Yao](https://yaoyx689.github.io/), Zhi Deng, [Junhui Hou](https://sites.google.com/site/junhuihoushomepage/).
+  <p align="center">
+  CVPR 2025
+    <br />
+    <a href="https://yaoyx689.github.io/"><strong>Yuxin Yao</strong></a>
+    ·
+    <strong>Zhi Deng</strong>
+    ·
+    <a href="https://sites.google.com/site/junhuihoushomepage/"><strong>Junhui Hou*</strong></a>
+  </p>
 
-### <a href="https://yaoyx689.github.io/RigGS.html" target="_blank">Project Page</a> | <a href="https://arxiv.org/abs/xxx" target="_blank">Paper</a> 
+  <p align="center">
+    <a href='https://yaoyx689.github.io/RigGS.html' style='padding-left: 0.5rem;'>
+      <img src='https://img.shields.io/badge/Project-Page-blue?style=flat&logo=Google%20chrome&logoColor=blue' alt='Project Page'></a>
+  </p>
+
+</p>
+<br />
+
+This repository contains the pytorch implementation for the paper [RigGS: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos](https://arxiv.org/abs/xxx), CVPR 2025. 
+![teaser.png](assets/teaser.png)
 
 
 ### Install all dependencies  

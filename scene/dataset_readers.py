@@ -1080,8 +1080,6 @@ def readZJUCameras(path, smpl_path, white_background=False, train_num=-1, with_s
         else:
             thinned_elements = None
         
-        # print('image_name = ', image_name, thinned_elements)
-        
         seg_path = os.path.join(path, "semantic_seg", fname + "_seg.npy") 
         if os.path.exists(seg_path):
             semantic_seg = np.load(seg_path)[0]
@@ -1121,10 +1119,13 @@ def readZJUCameras(path, smpl_path, white_background=False, train_num=-1, with_s
     return cam_infos, train_num, scene_center, coord_scale
 
 def readZJUMovingMonocularCams(path, white_background):
-    # Notice!! The subscripts here start from 0, which is different from the raw data.
+    # These subscripts here start from 0.
     # TRAIN_CAMERA_ID = [0, 4, 8, 12, 16, 20]
-    TEST_CAMERA_ID = [1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22] 
-    train_path = os.path.join(path, 'train/moving_view/')
+    # TEST_CAMERA_ID = [1, 2, 3, 5, 6, 7, 9, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22]
+    
+    # These subscripts here start from 1. TRAIN_CAMERA_ID: (1, 5, 9, 13, 17, 21)
+    TEST_CAMERA_ID = [2, 3, 4, 6, 7, 8, 10, 11, 12, 14, 15, 16, 18, 19, 20, 22, 23] 
+    train_path = os.path.join(path, 'train/')
     train_cam_infos, train_num, _, _ = readZJUCameras(train_path, path, white_background, with_smpl_pose=True)  
     test_cam_infos = []
     for idx in TEST_CAMERA_ID:

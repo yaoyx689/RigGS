@@ -57,7 +57,7 @@ We used the following datasets in our paper:
 - [DG-Mesh](https://github.com/Isabella98Liu/DG-Mesh)
 - [ZJU-MoCap](https://github.com/zju3dv/neuralbody/blob/master/INSTALL.md#zju-mocap-dataset) 
 
-The pre-processed 2D skeleton and semantic labels and pre-trained checkpoints (`saved_final_results`) can be downloaded [here](https://drive.google.com/drive/folders/1BoHJ4z8ZcDlKrNJrcDkPfpD0h8w9go5J?usp=sharing). More details about processing data can be found in [here](./process_data/readme.md). 
+The pre-processed 2D skeleton and semantic labels and pre-trained checkpoints (`saved_final_results`) can be downloaded [here](https://drive.google.com/drive/folders/1BoHJ4z8ZcDlKrNJrcDkPfpD0h8w9go5J?usp=sharing). More details about processing data can be found in [here](./process_data/README.md). 
 
 
 

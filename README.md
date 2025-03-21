@@ -28,7 +28,7 @@ This repository contains the pytorch implementation for the paper [RigGS: Riggin
 
 ### Install all dependencies  
 ```shell
-git clone https://github.com/yaoyx689/RigGS.git
+git clone https://github.com/yaoyx689/RigGS.git --recursive
 cd RigGS 
 conda create -n riggs python=3.9 
 conda activate riggs
@@ -69,7 +69,7 @@ python scripts/run_synthesis.py 0
 python scripts/run_zju.py 0 
 
 # Training new data (Find more detailed settings in run_demo.py.)
-python scripts/run_demo.py --data_dir ${data_dir} --out_dir ${out_dir} 
+python scripts/run_demo.py ${data_dir} ${out_dir} 
 ```
 
 

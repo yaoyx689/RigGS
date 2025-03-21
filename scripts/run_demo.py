@@ -55,8 +55,8 @@ def main(data_dir, out_dir):
 import argparse 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='example')
-    parser.add_argument('data_dir', type=int, help='input data path')
-    parser.add_argument('out_dir', type=int, help='output path')
+    parser.add_argument('data_dir', type=str, help='input data path')
+    parser.add_argument('out_dir', type=str, help='output path')
     args = parser.parse_args()
     
     main(args.data_dir, args.out_dir)

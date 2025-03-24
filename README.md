@@ -1,7 +1,7 @@
 <br />
 <p align="center">
     <h1 align="center">
-        <a href="#">RigGS</a>: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos
+        RigGS: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos
     </h1>
 
   <p align="center">

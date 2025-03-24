@@ -41,7 +41,7 @@ pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https
 pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 
 
-# install gaussian splatting and simple-knn, download from SC-GS(https://github.com/yihua7/SC-GS) 
+# install gaussian splatting and simple-knn 
 pip install ./submodules/diff-gaussian-rasterization
 pip install ./submodules/simple-knn
 

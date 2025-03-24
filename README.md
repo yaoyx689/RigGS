@@ -22,7 +22,7 @@
 </p>
 <br />
 
-This repository contains the pytorch implementation for the paper [RigGS: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos](https://arxiv.org/abs/xxx), CVPR 2025. 
+This repository contains the pytorch implementation for the paper [RigGS: Rigging of 3D Gaussians for Modeling Articulated Objects in Videos](https://arxiv.org/abs/2503.16822), CVPR 2025. 
 ![teaser.png](assets/teaser.png)
 
 

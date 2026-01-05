@@ -72,8 +72,6 @@ python scripts/run_zju.py 0
 python scripts/run_demo.py ${data_dir} ${out_dir} 
 ```
 
-### Usage of GUI
-Comming soon!
 
 
 ### Citation 
